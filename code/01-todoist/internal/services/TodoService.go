@@ -11,7 +11,7 @@ type ITodoService interface {
 	CreateTodo(ctx context.Context, dto models.CreateTodo) (models.Todo, error)
 	GetTodo(ctx context.Context, id int) (models.Todo, error)
 	ListTodos(ctx context.Context, userID string) ([]models.Todo, error)
-	UpdateTodo(ctx context.Context, id int, dto models.UpdateTodo) (models.Todo, error)
+	UpdateTodo(ctx context.Context, dto models.UpdateTodo) (models.Todo, error)
 	DeleteTodo(ctx context.Context, id int) error
 }
 

@@ -11,13 +11,13 @@ const (
 )
 
 type Todo struct {
-	ID          int
-	UserID      string
-	Title       string
-	Description string
-	Status      TodoStatus
-	CreatedAt   time.Time
-	UpdatedAt   time.Time
+	ID          int        `json:"id"`
+	UserID      string     `json:"userid"`
+	Title       string     `json:"title"`
+	Description string     `json:"description"`
+	Status      TodoStatus `json:"status"`
+	CreatedAt   time.Time  `json:"createdAt"`
+	UpdatedAt   time.Time  `json:"updatedAt"`
 }
 
 type CreateTodo struct {
